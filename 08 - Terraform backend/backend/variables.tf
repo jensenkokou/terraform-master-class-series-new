@@ -1,6 +1,6 @@
 variable "name" {
   type    = string
-  default = "KEN"
+  default = "JENSEN"
 }
 
 variable "versioning" {

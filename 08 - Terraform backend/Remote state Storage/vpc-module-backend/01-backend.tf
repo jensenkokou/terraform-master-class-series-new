@@ -3,13 +3,13 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.0"
+      version = "~> 5.0"
     }
   }
 
 
   backend "s3" {
-    bucket         = "my-terraformstate-landmark-buc"
+    bucket         = "my-terraformstate-bootcamp32-44-jensen"
     key            = "terraform/terraform.tfstate"
     dynamodb_table = "terraform-lock"
 
@@ -19,7 +19,7 @@ terraform {
 }
 
 /*resource "aws_s3_bucket" "my_bucket" {
-  bucket = "my-terraformstate-landmark-buc"
+  bucket = "my-terraformstate-bootcamp32-44-jensen"
   acl    = "private"
 
   versioning {
